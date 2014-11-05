@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>A Discrete Probabilistic Approach to Multiscale Dense Flow Visualization</title>
+
+<style>
+body{
+    background-color:rgb(216, 222, 202);
+}
+h1 { 
+font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+
+color:color:rgb(0,63,25);
+text-align:center;
+font-style: bold; 
+}
+h2 { text-align:center;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+
+ }
+h3 { text-align:center; font-style:italic; }
+
+div {
+    color:rgb(0,63,25);
+    text-align:justify;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+    width: 700pt;
+    margin: 0 auto;    
+    
+
+}
+div.ds {
+ font-family: "Lucida Console";
+ margin: 20pt auto;
+ width: 300pt;
+
+}
+a  {
+    color:rgb(130,63,25);     
+ }
+ img {
+    width:700pt;
+    margin: 0 auto;      
+ }
+
+</style>
+</head>
+
+<body>
+<h1>A Discrete Probabilistic Approach to Multiscale Dense Flow Visualization</h1>
+<h3> Victor Matvienko, Tino Weinkauf and Jens Krueger </h3>
+
+<h2> Abstract </h2>
+
+<div>
+Dense flow visualization 
+is a popular visualization paradigm.
+Traditionally, the various models and methods in this area 
+use a continuous formulation,
+resting upon the solid grounds of functional analysis.
+</div>
+<div>
+In this work,
+we examine a discrete formulation of dense flow visualization.
+One of the consequences of such a view is 
+that it allows an expression of Line Integral Convolution
+in terms of linear algebra
+as a matrix-vector multiplication,
+where the vector represents a noise image
+and the sparse matrix holds information
+about the integral curves,
+the convolution kernel,
+and the interpolation method.
+</div>
+
+<div>
+This alternative representation can be interpreted 
+in terms of probability theory
+leading to the discovery of a whole new class of visualization models.
+We propose a novel visualization approach consisting 
+in the computation of spectral embeddings,
+i.e., characteristic domain maps,
+defined by particle mixture probabilities.
+These embeddings are scalar fields that give insight 
+into the mixing processes of flow on different scales.
+The structures in these scalar fields are flow aligned.
+</div>
+<div>
+<img src="transfer_function.png" >
+</div>
+
+ 
+<h2>Datasets and Source Code </h2>
+
+<div class="ds">
+<a href="https://134.91.11.160/stuff/flow/drain_flow.mat">drain</a>
+ spiral vortex flow field  (matlab) 
+</div>
+
+<div class="ds">
+<a href="https://134.91.11.160/stuff/flow/ns2_flow.mat">ns2</a>
+two vertex flow field  (matlab) 
+</div>
+
+<div class="ds"> lic matrix for  
+<a href="https://134.91.11.160/stuff/flow/drain_lic.mat">drain</a>
+</div>
+
+<div class="ds"> lic matrix for   
+<a href="https://134.91.11.160/stuff/flow/ns2_lic.mat">ns2</a>
+</div>
+
+<div class="ds">
+<a href="https://134.91.11.160/stuff/flow/src.zip">source code</a>
+for embeddings computation 
+</div>
+
+
+
+</body>
+
+
+</html>
